@@ -51,7 +51,21 @@ function generatePassword() {
 
   console.log(aBoxForArrays)
 
-  return aBoxForArrays.length.userLengthChoice
+  // var userLengthChoice = length
+
+  console.log(userLengthChoice);
+
+// for (var i = 0; i < length; i++) {
+  return 
+// }
+
+return aBoxForArrays.userLengthChoice.length
+
+
+
+
+
+
 
 }
 
