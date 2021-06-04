@@ -50,7 +50,7 @@ function generatePassword() {
 
 
   if (!userUpper && !userLower && !userNumber && !userSpecialChar)
-    window.alert("Must choice atleast 1 option, press 'Generate Password' again.")
+    window.alert("Must choose at least 1 option, press 'Generate Password' again.")
 
 
   aBoxForArrays.sort(() => Math.random() - 0.5)
