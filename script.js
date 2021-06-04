@@ -2,14 +2,15 @@
 var generateBtn = document.querySelector("#generate");
 
 // My Variables
-var theePassword;
-var tempArray = []
-var aBoxForArrays = []
 var upperCaseLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var lowerCaseLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 var specialChar = ["!", "@", "#", "$", "%", "^", "&", "*", "?", "<", ">"];
+var aBoxForArrays = []
+var theePassword;
 
+// The variable my team helped me with
+var tempArray = []
 
 // The Function
 function generatePassword() {
@@ -56,7 +57,9 @@ function generatePassword() {
 
   console.log(aBoxForArrays)
 
+ 
   for (var i = 0; i < userLengthChoice; i++) {
+     // this is the part that really got me stuck, but again my team helped me through it.
     var randomChar = Math.floor(Math.random() * aBoxForArrays.length)
 
     console.log(aBoxForArrays[randomChar])
@@ -71,7 +74,7 @@ function generatePassword() {
   return theePassword
 }
 
-// TO DO:
+// TO DO LIST:
 // WHEN prompted for password criteria
 // ****THEN I select which criteria to include in the password
 
