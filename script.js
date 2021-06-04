@@ -1,6 +1,7 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
+// My Variables
 var theePassword;
 var tempArray = []
 var aBoxForArrays = []
@@ -10,13 +11,7 @@ var numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
 var specialChar = ["!", "@", "#", "$", "%", "^", "&", "*", "?", "<", ">"];
 
 
-// var userUpper = confirm("Would you like to use uppercase letters?")
-// var userLower = confirm("Would you like to use lowercase letters?")
-// var userNumber = confirm("Would you like to use numbers?")
-// var userSpecialChar = confirm("Would you like to use special characters?")
-
-
-
+// The Function
 function generatePassword() {
 
   var userLengthChoice = prompt("Please choose a number between 8 and 128", 12)
@@ -24,10 +19,10 @@ function generatePassword() {
   if (userLengthChoice < 8 || userLengthChoice > 128) {
     window.alert("Please choose a number between 8 and 128.")
     return "Press 'Generate Password' again."
+
   } else(userLengthChoice > 7 && userLengthChoice < 129)
   userUpper = confirm("Would you like to use uppercase letters?")
   console.log(userLengthChoice);
-
 
 
   if (userUpper)
@@ -64,19 +59,19 @@ function generatePassword() {
   for (var i = 0; i < userLengthChoice; i++) {
     var randomChar = Math.floor(Math.random() * aBoxForArrays.length)
 
-   console.log(aBoxForArrays[randomChar]) 
-   tempArray.push(aBoxForArrays[randomChar])
+    console.log(aBoxForArrays[randomChar])
+    tempArray.push(aBoxForArrays[randomChar])
   }
 
-console.log(tempArray);
+  console.log(tempArray);
 
   theePassword = tempArray.join("")
 
   console.log(theePassword)
   return theePassword
-} 
+}
 
-
+// TO DO:
 // WHEN prompted for password criteria
 // ****THEN I select which criteria to include in the password
 
@@ -88,16 +83,13 @@ console.log(tempArray);
 // ***TODO I need four confirms which will be in array form "true or false"
 
 // ***WHEN I answer each promp
-// ****THEN my input should be validated and at least one character type should be selected
+// ****HEN my input should be validated and at least one character type should be selected
 
-// WHEN all prompts are answered
-// THEN a password is generated that matches the selected criteria
+// ***WHEN all prompts are answered
+// ***THEN a password is generated that matches the selected criteria
 
-// WHEN the password is generated
-// THEN the password is either displayed in an alert or written to the page
-
-
-
+// ***WHEN the password is generated
+// ***THEN the password is either displayed in an alert or written to the page
 
 
 // Write password to the #password input
